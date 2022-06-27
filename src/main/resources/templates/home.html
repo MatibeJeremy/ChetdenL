@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lendapp - Home</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-text">
+          Home
+        </span>
+      </div>
+    </nav>
+    <div class="container" style="overflow:hidden; padding:20px">
+      <div class="card" style="padding:20px">
+        <h5 class="card-title">Hello [[${userFirstName}]]</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Email:  [[${userEmail}]]</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Account Balance:  </h6>
+        <p class="card-text"> Welcome Aboard! You are now logged in!</p>
+        <a href="/transactions" class="btn btn-primary-outline" style="padding:10px">View Transactions</a>
+        <a href="/api/transactions/generate" target="_blank" class="btn btn-warning">Generate Transactions</a>
+      </div>
+    </div>
+
+    <div class="container" style="padding:15px">
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1"> Sender: [[${userFirstName}]]</h5>
+          <small>Bank Transaction</small>
+        </div>
+        <p class="mb-1">Transaction Amount</p>
+        <small> 40,0000</small>
+      </a>
+    </div>
+    <div class="container" style="padding:15px">
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1"> Sender: [[${userFirstName}]]</h5>
+          <small>Mobile Transaction</small>
+        </div>
+        <p class="mb-1">Transaction Amount</p>
+        <small> 1,0000</small>
+      </a>
+    </div>
+    <div class="container" style="padding:15px">
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1"> Sender: [[${userFirstName}]]</h5>
+          <small>Mobile Transaction</small>
+        </div>
+        <p class="mb-1">Transaction Amount</p>
+        <small> 5000</small>
+      </a>
+    </div>
+    <div class="container" style="padding:15px">
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1"> Sender: [[${userFirstName}]]</h5>
+          <small>Bank Transaction</small>
+        </div>
+        <p class="mb-1">Transaction Amount</p>
+        <small> 3,000</small>
+      </a>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
